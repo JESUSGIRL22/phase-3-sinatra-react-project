@@ -32,24 +32,24 @@ For this project, you must:
   perform CRUD actions.
 - Implement proper front end state management. You should be updating state using a
   setState function after receiving your response from a POST, PATCH, or DELETE 
-  request. You should NOT be relying on a GET request to update state. 
+  request. You should NOT be relying on a GET request to update the state. 
 - Use good OO design patterns. You should have separate classes for each of your
   models, and create instance and class methods as necessary. 
-- Routes in your application (both client side and back end) should follow RESTful
+- Routes in your application (both client-side and back end) should follow RESTful
   conventions.
 - Use your back end optimally. Pass JSON for related associations to the front 
   end from the back end. You should use active record methods in your controller to grab
-  the needed data from your database and provide as JSON to the front end. You
-  should NOT be relying on filtering front end state or a separate fetch request to
+  the needed data from your database and provide it as JSON to the front end. You
+  should NOT be relying on filtering the front-end state or a separate fetch request to
   retrieve related data.
 
-For example, build a todo list application with a React frontend interface and a
+For example, build an e-commerce for makeup products application with a React frontend interface and a
 Sinatra backend API, where a user can:
 
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
+- **Select** a new product and add it to the cart
+- **Purchase/buy** a product
+- **Update** a cart
+- **Delete** a product from the cart
 
 A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
 category and each category _has many_ todos.
