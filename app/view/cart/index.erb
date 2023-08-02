@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <h1>Your Shopping Cart</h1>
+
+  <ul>
+    <% cart_items.each do |item| %>
+      <li>
+        <%= item.product.name %>
+        (Quantity: <%= item.quantity %>)
+        (Price: $<%= item.product.price %> each)
+      </li>
+    <% end %>
+  </ul>
+
+  <p>Total Price: $<%= total_price %></p>
+</body>
+</html>
